@@ -1,6 +1,25 @@
 # Vergel, Chean Bernard Villanueva
 # Televison Status Indicator
 
+# Import pyfiglet 
+import pyfiglet
+from termcolor import colored
+from pyfiglet import Figlet
+
+# Creating Header
+print("=" * 60)
+print("=" * 60)
+welcome = Figlet(font= "digital")
+welcome_output = (colored(welcome.renderText("Televison Status Indicator"), "green"))
+print(welcome_output)
+print("=" * 60)
+print("=" * 60)
+print("\033[33mHi, I am Chean Bernard V. Vergel.\033[0m")
+
+# Ask for the name of the user
+name_user = input("\033[40mHow about you what is your name? \033[0m")
+print(f"\033[40m\033[33mHi, {name_user}! I welcome you on this program. \033[0m")
+
 # Make a TV Class
 class TV:
     def __init__(self):
