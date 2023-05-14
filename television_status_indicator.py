@@ -49,7 +49,7 @@ class TV:
 
     # Get the Volume of the TV
     def get_volume(self, volume):
-        return self.tv_channel
+        return self.tv_volume
     
     # Set the volume of the TV
     def set_volume(self, volume):
@@ -90,7 +90,7 @@ class TV:
         print(f"\033[1;32mThe TV is\033[0m {status}")
         if self.tv_is_on:
             print(f"\U0001F6D1 \033[1;33mThe TV Channel:\033[0m \033[0;31m\033[1m{self.tv_channel}\033[0m")
-            print(f"\U0001F6D1 \033[1;34mThe TV Volume:\033[0m \033[0;31m\033[1m{self.tv_volume}")
+            print(f"\U0001F6D1 \033[1;34mThe TV Volume:\033[0m \033[0;31m\033[1m{self.tv_volume}\033[0m ")
             print(" ")
 
 # TestTV Class
