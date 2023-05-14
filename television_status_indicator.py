@@ -2,7 +2,13 @@
 # Televison Status Indicator
 
 # Make a TV Class
-     # Initialize TV attributes
+class TV:
+    def __init__(self):
+       # Initialize TV attributes
+        self.tv_is_on = True
+        self.tv_channel = 1
+        self.tv_volume = 7
+        
     # Turn on the TV
     # Turn off the TV
     # Get the Channel of the TV
@@ -21,4 +27,3 @@
         # Turn on TV2 and set the channel and volume
         # Print the status of both TVs
 # Create an instance of the test driver and run the test
-
