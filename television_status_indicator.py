@@ -73,7 +73,11 @@ class TV:
             print(f"The Tv Volume: {self.tv_volume}")
 
 # TestTV Class
-     # Initialize two TV objects
+class TestTV:
+    def __init__(self):
+        # Initialize two TV objects
+        self.tv1 = TV()
+        self.tv2 = TV()
     # Turn on TV1 and set the channel and volume
         # Turn on TV2 and set the channel and volume
         # Print the status of both TVs
