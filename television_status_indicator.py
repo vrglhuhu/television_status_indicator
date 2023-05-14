@@ -37,10 +37,20 @@ class TV:
      if self.tv_volume <= 1 and volume <= maximum_volume:
         self.tv_volume = volume
 
-    # Increases the channel number by 1, if it's not already at 100.
-    # Decrease the channel number by 1, if it's not already at 1.
+    # Increases the channel number by 1, if it's not already at 120.
+    def tv_channel_up(self):
+      maximum_channel = 120
+      if self.tv_channel < maximum_channel:
+        self.tv_channel += 1
+
+    # Decrease the channel number by 1, if it's  already at 120.
+    def tv_channel_down(self):
+      maximum_channel = 120
+      if self.tv_channel > maximum_channel:
+        self.tv_channel -= 1
+
     # Increase the volume level by 1, if it's not already at 7.
-    # Decrease the volume level by 1, if it's not already at 1.
+    # Decrease the volume level by 1, if it's  already at 7.
     # Print the current status of the TV
 
 # TestTV Class
