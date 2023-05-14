@@ -35,7 +35,7 @@ class TV:
 
     # Turn off the TV
     def turn_off(self):
-        self.tv_is_off = False
+        self.tv_is_on = False
 
     # Get the Channel of the TV
     def get_channel(self): 
