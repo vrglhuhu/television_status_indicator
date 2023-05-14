@@ -7,18 +7,19 @@ from termcolor import colored
 from pyfiglet import Figlet
 
 # Creating Header
-print("=" * 60)
-print("=" * 60)
+print(" ")
+print("\033[1;33m=\033[0m" * 60)
+print("\033[1;34m=\033[0m" * 60)
 welcome = Figlet(font= "digital")
 welcome_output = (colored(welcome.renderText("Televison Status Indicator"), "green"))
 print(welcome_output)
-print("=" * 60)
-print("=" * 60)
-print("\033[33mHi, I am Chean Bernard V. Vergel.\033[0m")
+print("\033[1;35m=\033[0m" * 60)
+print("\033[1;36m=\033[0m" * 60)
+print("\n\033[40m\033[1;31mHi, I am Chean Bernard V. Vergel.\033[0m")
 
 # Ask for the name of the user
-name_user = input("\033[40mHow about you what is your name? \033[0m")
-print(f"\033[40m\033[33mHi, {name_user}! I welcome you on this program. \033[0m")
+name_user = input("\n\033[40m\033[0;35mHow about you what is your name? \033[0m")
+print(f"\n\033[40m\033[0;32mHi, {name_user.title()}! I welcome you on this program. \033[0m")
 
 # Make a TV Class
 class TV:
@@ -86,10 +87,11 @@ class TV:
             status = "ON"
         else:
             status = "OFF"
-        print(f"The TV is {status}")
+        print(f"\033[1;32mThe TV is\033[0m {status}")
         if self.tv_is_on:
-            print(f"The TV Channel: {self.tv_channel}")
-            print(f"The Tv Volume: {self.tv_volume}")
+            print(f"\U0001F6D1 \033[1;33mThe TV Channel:\033[0m \033[0;31m\033[1m{self.tv_channel}\033[0m")
+            print(f"\U0001F6D1 \033[1;34mThe TV Volume:\033[0m \033[0;31m\033[1m{self.tv_volume}")
+            print(" ")
 
 # TestTV Class
 class TestTV:
@@ -109,11 +111,11 @@ class TestTV:
         self.tv2.set_volume(2)
 
         # Print the status of both TVs
-        print("\nTELEVISON STATUS INDICATOR\n")
-        print("TV1:")
+        print("\n\033[0;31m\033[4mTELEVISON STATUS INDICATOR\033[0m\n")
+        print("\U0001F4CC \033[4m\033[1;35mTV1:\033[0m")
         self.tv1.print_status()
 
-        print("\nTV2:")
+        print("\n\U0001F4CC \033[4m\033[1;35mTV2:\033[0m")
         self.tv2.print_status()
 
 # Create an instance of the test driver and run the test
