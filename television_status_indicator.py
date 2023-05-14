@@ -7,7 +7,7 @@ class TV:
        # Initialize TV attributes
         self.tv_is_on = True
         self.tv_channel = 1
-        self.tv_volume = 7
+        self.tv_volume = 1
 
     # Turn on the TV
     def turn_on(self):
