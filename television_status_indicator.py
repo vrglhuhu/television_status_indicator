@@ -111,13 +111,15 @@ class TestTV:
         self.tv2.set_volume(2)
 
         # Print the status of both TVs
-        print("\n\033[0;31m\033[4mTELEVISON STATUS INDICATOR\033[0m\n")
+        print("\n\033[0;31m\033[4mTELEVISON STATUS INDICATOR\033[0m")
         print("\U0001F4CC \033[4m\033[1;35mTV1:\033[0m")
         self.tv1.print_status()
 
         print("\n\U0001F4CC \033[4m\033[1;35mTV2:\033[0m")
         self.tv2.print_status()
 
+        
 # Create an instance of the test driver and run the test
-test = TestTV()
-test.run_test()
+TV()
+TestTV()
+
