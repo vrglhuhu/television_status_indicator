@@ -62,7 +62,16 @@ class TV:
           self.tv_volume -= 1
 
     # Print the current status of the TV
-
+    def print_status(self):
+        if self.tv_is_on:
+            status = "ON"
+        else:
+            status = "OFF"
+        print(f"The TV is {status}")
+        if self.tv_is_on:
+            print(f"The TV Channel: {self.tv_channel}")
+            print(f"The Tv Volume: {self.tv_volume}")
+            
 # TestTV Class
      # Initialize two TV objects
     # Turn on TV1 and set the channel and volume
