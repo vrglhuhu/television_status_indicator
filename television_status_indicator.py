@@ -78,7 +78,23 @@ class TestTV:
         # Initialize two TV objects
         self.tv1 = TV()
         self.tv2 = TV()
-    # Turn on TV1 and set the channel and volume
+
+        # Turn on TV1 and set the channel and volume
+        self.tv1.turn_on()
+        self.tv1.set_channel(30)
+        self.tv1.set_volume(3)
+
         # Turn on TV2 and set the channel and volume
+        self.tv2.turn_on()
+        self.tv2.set_channel(3)
+        self.tv2.set_volume(2)
+
         # Print the status of both TVs
+        print("\nTELEVISON STATUS INDICATOR\n")
+        print("TV1:")
+        self.tv1.print_status()
+
+        print("\nTV2:")
+        self.tv2.print_status()
+        
 # Create an instance of the test driver and run the test
