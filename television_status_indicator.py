@@ -15,7 +15,7 @@ class TV:
 
     # Turn off the TV
     def turn_off(self):
-        self.tv_is_on = False
+        self.tv_is_off = False
 
     # Get the Channel of the TV
     def get_channel(self): 
@@ -71,7 +71,7 @@ class TV:
         if self.tv_is_on:
             print(f"The TV Channel: {self.tv_channel}")
             print(f"The Tv Volume: {self.tv_volume}")
-            
+
 # TestTV Class
      # Initialize two TV objects
     # Turn on TV1 and set the channel and volume
