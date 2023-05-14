@@ -96,5 +96,7 @@ class TestTV:
 
         print("\nTV2:")
         self.tv2.print_status()
-        
+
 # Create an instance of the test driver and run the test
+test = TestTV()
+test.run_test()
