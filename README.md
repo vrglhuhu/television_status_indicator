@@ -29,7 +29,7 @@ _Let this program show the status of a Television!_
 - > **1st step** - You have to install any of the popular IDEs such as PyCharm, Atom, or Visual Studio Code to run this program.
 - > **2nd step** - After you have installed and opened the IDE, open the file containing the program.
 - > **3rd step** - Create a new file, name it, and save it as .py file. 
-- > **4th step** - Copy and paste the code from this question on the file. 
+- > **4th step** - Copy and paste the code from this question on the two files named TV and testTv. 
 - > **5th step** - The program should now be running. Follow the prompts to enter text lines and see the output.
 - > **6th step** - Select the code and press CTRL+ALT+N to run the program. 
 - > **7th step** - The program will be executed in the terminal. 
